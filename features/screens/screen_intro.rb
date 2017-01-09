@@ -3,10 +3,15 @@ class ScreenIntro < ScreenBase
   def initialize(driver)
     @base = element(:id, 'content')
     @driver = driver
+    #unique ID for button (Iespejams vareja ari ar button class, jo ta ir vieniga poga)
     @close_intro = element(:id, 'close_intro')
+    #unique ID for specific image
     @intro_footer_image = element(:id, 'intro_footer_image')
+    #unique ID for specific image
     @intro_page_image = element(:id, 'page_image')
+    #unique ID for specific text
     @intro_yellow_text = element(:id, 'intro_text_header')
+    #unique ID for specific text
     @intro_black_text = element(:id, 'intro_text_footer')
   end
 
