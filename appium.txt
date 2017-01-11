@@ -1,5 +1,9 @@
 [caps]
+<<<<<<< HEAD
 deviceName = '00bbb8a0ec4f9f25'
+=======
+deviceName = 'de58458b'
+>>>>>>> 93ae51ae40c0f3095e5cc084d4167b45805cbf04
 platformName = 'Android'
 appActivity = 'com.testdevlab.notifyus.activities.MainActivity'
 appPackage = 'com.testdevlab.notifyus'
