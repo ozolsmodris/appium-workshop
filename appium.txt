@@ -1,6 +1,6 @@
 [caps]
 <<<<<<< HEAD
-deviceName = '00bbb8a0ec4f9f25'
+deviceName = 'LGD855200400a3'
 =======
 deviceName = 'de58458b'
 >>>>>>> 93ae51ae40c0f3095e5cc084d4167b45805cbf04

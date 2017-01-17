@@ -19,7 +19,7 @@ options = {
   'port' => 5500,
   'portboot' => 5051,
 <<<<<<< HEAD
-  'sn' => '00bbb8a0ec4f9f25',
+  'sn' => 'LGD855200400a3',
 =======
   'sn' => 'de58458b',
 >>>>>>> 93ae51ae40c0f3095e5cc084d4167b45805cbf04
