@@ -31,6 +31,14 @@ Given /^I am on create filter screen$/ do
 end
 
 
-Given /^I create empty property filter$/ do
- @tests.test_add_filter.create_empty_filter
+# Given /^I create empty property filter$/ do
+# @tests.test_add_filter.create_empty_filter
+# end
+
+Given /^I create property filter$/ do
+ @tests.test_add_filter.create_filter
+end
+
+Given /^I check if filter is created$/ do
+ @tests.test_add_filter.valid_filter
 end

@@ -18,11 +18,7 @@ end
 options = {
   'port' => 5500,
   'portboot' => 5051,
-<<<<<<< HEAD
   'sn' => 'LGD855200400a3',
-=======
-  'sn' => 'de58458b',
->>>>>>> 93ae51ae40c0f3095e5cc084d4167b45805cbf04
   'app' => 'app.apk',
   'appPackage' => 'com.testdevlab.notifyus'
 
@@ -53,6 +49,6 @@ Before do
   @screens = Screens.new $driver
   @tests = Tests.new @screens
 end
-After do
-  $driver.driver_quit
-end
+# After do
+#  $driver.driver_quit
+# end

@@ -15,16 +15,28 @@ class ScreenSetFilterParameters < ScreenBase
     end
   end
 
-  def set_name(text_name)
+  def set_filter(text_name)
     @driver.find_element(
       @filter_name[:type], @filter_name[:value]
-    ).send_keys(text_name)
+    ).type(text_name)
+  end
+
+  def set_values(text_name, from, to)
+    @driver.find_elements(
+      @parameter_holders[:type], @parameter_holders[:value]
+    ).each do |row|
+      next unless row.find_element(:id, 'parameter_name').text == text_name
+        row.find_element(:id,'left_param').send_keys(from)
+        row.find_element(:id,'right_param').send_keys(to)
+      break
+    end
   end
 
   def save_filter
     @driver.find_element(
       @button_save[:type], @button_save[:value]
     ).click
+    sleep(5)
   end
 
 end
