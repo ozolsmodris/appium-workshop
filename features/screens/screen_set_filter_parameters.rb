@@ -28,6 +28,7 @@ class ScreenSetFilterParameters < ScreenBase
       next unless row.find_element(:id, 'parameter_name').text == text_name
         row.find_element(:id,'left_param').send_keys(from)
         row.find_element(:id,'right_param').send_keys(to)
+        @driver.hide_keyboard
       break
     end
   end
