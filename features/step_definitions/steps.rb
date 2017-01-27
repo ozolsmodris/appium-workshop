@@ -26,11 +26,12 @@ Given /^I am on intro screen$/ do
  @tests.test_intro.intro_visible?
 end
 
-Given /^I am on create filter screen$/ do
+Given /^I have opened create filter screen$/ do
   @tests.test_intro.close_intro
 end
 
 
+<<<<<<< HEAD
 # Given /^I create empty property filter$/ do
 # @tests.test_add_filter.create_empty_filter
 # end
@@ -41,4 +42,8 @@ end
 
 Given /^I check if filter is created$/ do
  @tests.test_add_filter.valid_filter
+=======
+Given /^I create property filter$/ do
+ @tests.test_add_filter.create_filter
+>>>>>>> fcf178f41fddbfe8515762afc0b363dd498def4e
 end
